@@ -1,3 +1,5 @@
+ 
+ 
  $(document).ready(function(){
  $("#btn").click(function(){
   var pizzaCrust = $("#pcrust option:selected").text();
@@ -76,7 +78,7 @@
    }
 
   }
-  var totalPrice = (order.getSizePrice() + order.getCrustPrice() + order.getToppingPrice())*number
+var totalPrice = (order.getSizePrice() + order.getCrustPrice() + order.getToppingPrice())*number
 $("#paragraph").empty().append(totalPrice)
 
 
@@ -84,12 +86,38 @@ $("#paragraph").empty().append(totalPrice)
 
 
 
+  })
 
- })
+})
+
+//function buttons
+function functionbtnY(){
+ alert ("Delievery cost is 200")
+ prompt ("where do you want it delivered to?")
+
+}
+
+function functionbtnN(){
+ alert ( "Your total is:"+  totalPrice )
+}
 
 
 
- })
 
 
- 
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
