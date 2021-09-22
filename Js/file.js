@@ -82,8 +82,14 @@ $("#paragraph").empty().append(totalPrice)
 
 
 
- })
 
 
 
  })
+
+
+
+ })
+
+
+ 

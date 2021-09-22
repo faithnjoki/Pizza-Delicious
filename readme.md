@@ -18,10 +18,15 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Must have the following items for code to run.
 
-Editor
-Live server extension
-Git
-Github account
+- Editor
+- Live server extension
+- Git
+- Github account
+
+
+
+
+
 
 
 ## BDD
