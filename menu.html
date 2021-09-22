@@ -1,0 +1,180 @@
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- links  -->
+<link rel="stylesheet" href="">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+ integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+ <!--jquerry -->
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ <title>Menu || Pizza Delicious</title>
+ <style>
+   #main, html{
+background-color:blanchedalmond;
+
+}
+
+
+ </style>
+
+
+</head>
+
+<body>
+ <!-- Menu -->
+ <!-- Toppings -->
+ <div id="main">
+ <div class="container">
+ <h1 style="text-align: center;" font-size: 40px;> Our Menu</h1>
+ <br>
+
+  <div class="container">
+  <div class="row">
+ <div class="col-4"> 
+  <div class="card" style="width: 18rem;">
+   <img src="/photos/pizza mushrooms.jpeg" class="card-img-top" alt="...">
+   <div class="card-body">
+    <p class="card-text">Enjoy your Pizza with Button Mushrooms toppings.</p>
+  
+   </div>
+  </div>
+  </div>
+  <!-- veges -->
+  <div class="col">
+   <div class="col-4">
+    <div class="card" style="width: 18rem;">
+     <img src="/photos/veg pizza.jpeg" class="card-img-top" alt="...">
+     <div class="card-body">
+      <p class="card-text">Enjoy your Pizza with Vegetable toppings.</p>
+   
+     </div>
+    </div>
+   </div>
+
+
+  </div>
+  <!-- chicken -->
+  <div class="col">
+   <div class="col-4">
+    <div class="card" style="width: 18rem;">
+     <img src="/photos/peperoni pizza.jpeg" class="card-img-top" alt="...">
+     <div class="card-body">
+      <p class="card-text">Enjoy your Pizza with Pepperoni toppings.</p>
+  
+     </div>
+    </div>
+   </div>
+  
+  
+  </div>
+  </div>
+  </div>
+<br><br>
+<p>We have pizza crusts in 3 categories,please select the <strong>Pizza Crust</strong> and <strong>Pizza Size</strong>  you would like: </p>
+<div class="row">
+ <div class="col-3">
+  <select class="form-select " aria-label="Default select example" id="pcrust">
+    <option selected>Pizza Crusts</option>
+   <option value="1">Crispy</option>
+   <option value="2">Stuffed</option>
+   <option value="3">GluttenFree</option>
+  </select>
+ </div>
+ <div class="col-3">
+   <select class="form-select " aria-label="Default select example" id="psize">
+   <option>Pizza Size</option>
+   <option value="1">Small</option>
+   <option value="2">Medium</option>
+   <option value="3">Large</option>
+  </select>
+  
+ </div>
+ <br>
+<div class="col-3">
+  <select class="form-select " aria-label="Default select example" id="ptopping">
+     <option selected>Pizza Toppings</option> 
+    <option value="1">Mushrooms</option>
+    <option value="2">Vegetables</option>
+    <option value="3">Pepperoni</option>
+  </select>
+</div>
+ <br>
+<div class="col-3" >
+  <input type="number"  id="numbeR" placeholder="Number of pizza">
+</div>
+</div>
+<br>
+<button type="button" id="btn">Total</button>
+<!-- paragraph-->
+<h2 id="paragraph">Your total is:</h2>
+</div>
+<br><br>
+  
+<br>
+  <!--remove default padding  -->
+<!--crusts  -->
+ <div class="container">
+  <div class="row">
+ 
+   <h3>Crispy Crusts</h3>
+   <br>
+  <div class="col p-0">
+ <img src="/photos/crispy.jpeg" alt=""  id="crispy1" height="200px" width="250px">
+ </div>
+ <div class="col p-0">
+ <img src="photos/Crispy3.jpeg" alt=""  id="crispy2" height="200px" width="250px">
+ </div>
+  <div class="col p-0">
+ <img src="/photos/Crispy2.jpeg" alt=""  id="crispy3" height="200px" width="250px">
+ </div>
+ </div>
+ </div>
+<br>
+  <!--Stuffed  -->
+<div class="container">
+ <div class="row">
+
+  <h3>Stuffed Crusts</h3>
+  <br>
+  <div class="col">
+   <img src="/photos/stuffed 1.jpeg" alt="" id="stuffed1" height="200px" width="250px">
+  </div>
+  <div class="col">
+   <img src="/photos/stuffed 2.jpeg" alt="" id="stuffed2" height="200px" width="250px">
+  </div>
+  <div class="col">
+   <img src="/photos/stuffed 3.jpeg" alt="" id="stuffed3" height="200px" width="250px">
+  </div>
+ </div>
+</div>
+<br><br>
+
+<!--gluttten free  -->
+<div class="container">
+ <div class="row">
+
+  <h3>Gluttten Free Crusts</h3>
+  <br>
+  <div class="col">
+   <img src="/photos/glutten free 1.jpeg" alt="" id="gluttefree1" height="200px" width="250px">
+  </div>
+  <div class="col">
+   <img src="/photos/glutten free 2.jpeg" alt="" id="gluttefree2" height="200px" width="250px">
+  </div>
+  <div class="col">
+   <img src="/photos/glutten free 3.jpeg" alt="" id="gluttefree3" height="200px" width="250px">
+  </div>
+ </div>
+ <br><br>
+ <h5>To our highly Estemed Customer,please <a class="btn btn-primary" href="index.html" role="button">Click Me</a> to go back to Our home Page Or  <a class="btn btn-success" href="menu.html" role="button">Click Me</a> to go
+  to top of this page.</h5>
+  
+</div>
+</div>
+
+</body>
+<script src="/Js/file.js"></script>
+</html>
