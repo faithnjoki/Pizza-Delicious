@@ -114,7 +114,7 @@ $(document).ready(function(){
 
 $ ("#checkOut").click(function(){
 let name = prompt("Your Name")
-alert("Thanks for shopping with us" + name )
+alert("Thanks for shopping with us " + name )
 })
 
 
