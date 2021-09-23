@@ -51,7 +51,7 @@ As a customer, I would like to;
 
 ## Live link
 
-Live link: 
+Live link: https://faithnjoki.github.io/Pizza-Delicious/
 
 ## Support and contact details
 
