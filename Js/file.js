@@ -1,4 +1,7 @@
+ var totalPrice;
+ var number;
  
+
  
  $(document).ready(function(){
  $("#btn").click(function(){
@@ -8,7 +11,7 @@
 
   var pizzaTopping = $("#ptopping option:selected").text();
   
-  var number = $("#numbeR").val()
+  number = $("#numbeR").val();
 
   //pizza constructor
   function Pizza(crust,size,topping,num){
@@ -78,7 +81,7 @@
    }
 
   }
-var totalPrice = (order.getSizePrice() + order.getCrustPrice() + order.getToppingPrice())*number
+totalPrice = (order.getSizePrice() + order.getCrustPrice() + order.getToppingPrice())*number
 $("#paragraph").empty().append(totalPrice)
 
 
@@ -94,30 +97,29 @@ $("#paragraph").empty().append(totalPrice)
 function functionbtnY(){
  alert ("Delievery cost is 200")
  prompt ("where do you want it delivered to?")
+ alert ( "Your total  is:" +(200+totalPrice)  )
 
 }
-
-function functionbtnN(){
- alert ( "Your total is:"+  totalPrice )
+function  functionbtnN(){
+alert ("Your total  is:" + totalPrice )
 }
 
+//form
+$(document).ready(function(){
+ $ ("#checkOut").click(function(){
+   $("#numP").val(number);
+   $("#totalP").val(totalPrice);
+
+ })
+
+$ ("#checkOut").click(function(){
+let name = prompt("Your Name")
+alert("Thanks for shopping with us " + name )
+})
 
 
 
 
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
+})
+ 
 
